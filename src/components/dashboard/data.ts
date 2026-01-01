@@ -1,14 +1,14 @@
 import type { NavItem, Snapshot } from "./types";
 
 export const navItems: NavItem[] = [
-  { label: "Dashboard", key: "dashboard", active: true },
-  { label: "Analytics", key: "analytics" },
-  { label: "Orders", key: "orders" },
-  { label: "Customers", key: "customers" },
-  { label: "Reviews", key: "reviews" },
-  { label: "Chats", key: "chats" },
-  { label: "Wallet", key: "wallet" },
-  { label: "Logout", key: "logout" },
+  { label: "Dashboard", key: "dashboard", href: "/" },
+  { label: "Analytics", key: "analytics", href: "/analytics" },
+  { label: "Orders", key: "orders", href: "/orders" },
+  { label: "Customers", key: "customers", href: "/customers" },
+  { label: "Reviews", key: "reviews", href: "/reviews" },
+  { label: "Chats", key: "chats", href: "/chats" },
+  { label: "Wallet", key: "wallet", href: "/wallet" },
+  { label: "Logout", key: "logout", href: "/logout" },
 ];
 
 export const sensorZones = [

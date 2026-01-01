@@ -50,5 +50,6 @@ export type NavItemKey =
 export type NavItem = {
   label: string;
   key: NavItemKey;
+  href: string;
   active?: boolean;
 };

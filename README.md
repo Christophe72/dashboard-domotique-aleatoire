@@ -1,24 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Dashboard capteurs (Next.js)
+
+Tableau de bord sombre en style "glass" pour capteurs en attente, avec donnees
+aleatoires en attendant le branchement des capteurs reels.
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies, then run the dev server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Donnees aleatoires regenerees toutes les 4.5s pour simuler les capteurs.
+- Dashboard decoupe en composants reutilisables.
+- Mise en page responsive et theme sombre proche de la maquette.
+
+## Structure
+
+- `src/app/page.tsx`: point d entree qui rend le dashboard.
+- `src/components/dashboard`: composants, types, data, utils.
+- `src/app/globals.css`: theme, glass, anneaux, fond degrade.
+
+## Scripts
+
+- `npm run dev`: demarrer en local.
+- `npm run build`: build de production.
+- `npm run start`: lancer le build.
+- `npm run lint`: lint.
+
+## Notes
+
+- Fonts: Space Grotesk (titres) + Manrope (texte).
 
 ## Learn More
 
